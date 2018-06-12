@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+/*Panel tabs*/
+
+.img_asclepio {
+	margin-left: 100px;
+}
+
+.text_chiSiamo {
+	margin-left: 200px;
+	position:relative;
+}

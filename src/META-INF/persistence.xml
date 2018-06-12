@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="clinic-unit" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>PostgreSQL Database</jta-data-source>
+		
+		<class>it.clinic.model.Indicator</class>
+		<class>it.clinic.model.Administrator</class>
+		<class>it.clinic.model.Exam</class>
+		<class>it.clinic.model.ExamTypology</class>
+		<class>it.clinic.model.Medic</class>
+		<class>it.clinic.model.Patient</class>
+		<class>it.clinic.model.Prerequisite</class>
+		
+		<properties>
+
+		     <!--- ad ogni esecuzione viene creato lo schema, cancellando il contenuto delle tabelle 
+		     <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+		     
+		      <!-- SQL dialect -->
+             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+             
+             <!--- Per avere info sulle istruzioni SQL inviate al db -->
+             <property name="hibernate.show_sql" value="true" />
+             <property name="hibernate.format_sql" value="true" />
+             
+		</properties>
+	</persistence-unit>
+</persistence>
+
+

@@ -1,0 +1,68 @@
+Progetto: ClinicaACME, ProgettoSIW2016.
+
+Descrizione testuale per i casi d'uso di: ProgettoSIW2016.
+
+- Caso d'uso UC1 (perfettamente funzionante): consulta offerta
+  Attore primario: utente non registrato.
+  
+  Scenario principale di successo: 
+  1. L'utente consulta l'elenco delle tipologie di esame
+  2. L'utente sceglie una tipologia di esame e ne richiede i dettagli 
+  3. Il sistema mostra i dettagli della tipologia di esame scelta dall'utente
+  4. L'utente ripete i passi precedenti un numero indefinito di volte
+
+
+  
+- Caso d'uso UC2 (perfettamente funzionante) : crea prenotazione esame
+  Attore primario: amministrazione (deve essere autenticato)
+  
+  Scenario principale di successo: 
+  1. L'ammistrazione crea un esame
+  2. L'amministrazione imposta una tipologia di esame all'esame creato
+  3. L'amministrazione associa un paziente all'esame creato
+  4. Il sistema registra l'esame (impostando automaticamente la data di prenotazione)
+
+
+  
+- Caso d'uso UC3 (perfettamente funzionante, bug sul login, vedi bugs.txt): consulta risultati proprio esame.
+  Attore primario: paziente (deve essere autenticato)
+
+  Scenario principale di successo:
+  1. Il paziente consulta l'elenco dei propri esami.
+  2. Il sistema mostra al paziente l'elenco dei suoi esami.
+  3. Il paziente chiede il dettaglio di un esame.
+  4. Il sistema mostra il dettaglio dell'esame.
+  5. Il paziente ripete i passi precedenti finché necessario.
+
+  
+- Caso d'uso UC4 (per i dettagli si può inserire solo il nome della tipologia per mancanza di tempo): inserimento tipologia di esame
+  Attore primario: amministrazione (deve essere autenticato)
+  
+  Scenario principale di successo:
+  1. L'amministratore inserisce una nuova tipologia di esame specificandone i dettagli
+  2. Il sistema registra la tipologia di esame
+  3. I punti precedenti vengono ripetuti fino a che necessario
+
+
+  
+- Caso d'uso UC5 (perfettamente funzionante): esami effettuati da un medico
+  Attore primario: amministrazione (deve essere autenticato)
+
+  Scenario principale di successo:
+  1. L’amministratore fornisce o seleziona il nome e il cognome di un medico.
+  2. Il sistema mostra all’amministratore tutti gli esami effettuati dal medico con i relativi dettagli.
+
+
+- Caso d'uso UC6 (4to punto non funzionante, vedi bugs.txt): inserimento risultati esame
+  Attore primario: amministrazione (deve essere autenticato)
+
+  Scenario principale di successo:
+  1. Il sistema mostra tutti gli esami in corso.
+  2. L'amministratore sceglie un esame per il quale inserire i risultati.
+  3. Il sistema mostra un riepilogo per l'esame scelto e una tabella di inserimento per i risultati.
+  4. L'amministratore inserisce i risultati.
+  
+  
+  -Estensioni
+  
+  1.L'amministratore può inserire un nuovo medico nel sistema.

@@ -1,0 +1,10 @@
+BUGS RISCONTRATI E NON RISOLTI:
+
+- Il login del paziente non viene memorizzato, a differenza di quello dell'admin.
+- UC6: Errore nell'inserimento di valori per un indicatore.
+
+
+ULTERIORI FUNZIONALITA' ASSENTI PER MANCANZA DI TEMPO:
+- Non vi è la gestione della sicurezza tramite filtri, le pagine possono essere accedute al di fuori del login.
+- Grafica poco curata.
+-Password non criptate con Jasypt.
